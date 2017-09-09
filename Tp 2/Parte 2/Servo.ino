@@ -22,12 +22,9 @@ void loop()
 
   pinMode(echoPin, INPUT);
   duration = pulseIn(echoPin, HIGH);
-
-  // convert the time into a distance
   inches = microsecondsToInches(duration);
   cm = microsecondsToCentimeters(duration);
   servoMotor.write(inches);
-
   delay(100);
 }
 
