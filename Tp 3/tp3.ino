@@ -10,7 +10,7 @@ void setup()
 void loop()
 {
     val = digitalRead(pushButtom); // read input value
-    if (val == HIGH)
+    if (val == HIGH) 
     {                              
         digitalWrite(led, HIGH); // turn LED OFF
     }
